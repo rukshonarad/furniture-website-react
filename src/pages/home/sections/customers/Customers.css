@@ -1,0 +1,75 @@
+.customers-review {
+    max-width: 160rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.customers-review__left h5 {
+    margin-right: 10rem;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 5.04rem;
+    letter-spacing: -0.1rem;
+    color: var(--white-color);
+    margin-bottom: 6rem;
+}
+
+.customers-review__left {
+    padding: 20rem 10rem;
+    height: 72rem;
+    width: 50%;
+    background-color: var(--orange-color);
+    display: inline-block;
+}
+.author {
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 3rem;
+    margin-left: 15rem;
+}
+
+.customers-review__left p {
+    margin-left: 20rem;
+    font-size: 1.7rem;
+    color: var(--white-color);
+    font-weight: 400;
+    line-height: 3rem;
+}
+
+.customers-review__img-wrapper {
+    display: inline-block;
+    vertical-align: middle;
+    height: 72rem;
+    width: 100%;
+}
+.customers-review__rigth {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.customers-review__img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.play-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 9.2rem;
+    height: 9.2rem;
+    border-radius: 50%;
+    border: 0.4rem solid white;
+    background-color: transparent;
+}
+
+.play-icon:hover {
+    height: 4.6rem;
+    width: 4.6rem;
+}
