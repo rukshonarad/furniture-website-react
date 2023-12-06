@@ -1,0 +1,67 @@
+.progress-section {
+    max-width: 160rem;
+    margin: 0 auto;
+    padding: 4rem 15.2rem;
+}
+
+.progress-section h3 {
+    margin-bottom: 11rem;
+    opacity: 0.69;
+    font-size: 1.7rem;
+    color: var(--text-color);
+    font-weight: 600;
+    line-height: 3rem;
+    letter-spacing: 0.4rem;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.section-devider {
+    margin-bottom: 17rem;
+}
+.lock {
+    display: inline-block;
+}
+.num {
+    width: calc((100% - 6rem - 10rem - 15rem) * 0.1);
+    margin-right: 6rem;
+    color: var(--teal-color);
+    font-size: 2.8rem;
+    font-weight: 600;
+    line-height: 4rem;
+    letter-spacing: -0.05rem;
+    vertical-align: top;
+}
+
+.progress {
+    width: calc((100% - 6rem - 10rem - 15rem) * 0.25);
+    margin-right: 10rem;
+}
+
+.section-progress {
+    width: calc((100% - 6rem - 10rem - 15rem) * 0.4);
+    margin-right: 15rem;
+    opacity: 0.6;
+    font-size: 1.7rem;
+    font-weight: 400;
+    vertical-align: top;
+}
+.first-progress {
+    color: var(--text-color);
+    font-size: 3.6rem;
+    font-weight: 600;
+    line-height: 4.6rem;
+    letter-spacing: -0.1rem;
+    margin-right: 8.5rem;
+}
+
+.link {
+    display: inline-block;
+    width: calc((100% - 6rem - 10rem - 15rem) * 0.25);
+}
+
+.orange-link-text {
+    width: 12.2rem;
+}
