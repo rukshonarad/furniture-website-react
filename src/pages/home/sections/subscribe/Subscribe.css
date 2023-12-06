@@ -1,0 +1,58 @@
+.subscribe-section-wrapper {
+    padding: 13.6rem 45rem 12.5rem 45rem;
+}
+
+.subscribe-section {
+    align-items: center;
+    vertical-align: middle;
+    text-align: center;
+}
+
+h6 {
+    margin-bottom: 3.6rem;
+    color: var(--text-color);
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 5.04rem;
+}
+
+.info {
+    font-size: 1.7rem;
+    margin-bottom: 5.7rem;
+    line-height: 3rem;
+}
+
+.email-wrapper {
+    width: 100%;
+}
+
+#email {
+    width: 60%;
+    margin-bottom: 3.4rem;
+    padding: 2rem 2.8rem;
+    height: 7rem;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border: 0.1rem solid gray;
+    background: var(--color-4, #fff);
+}
+
+#button {
+    border: none;
+    background-color: var(--teal-color);
+    height: 7rem;
+    width: 40%;
+    border-radius: 0 1rem 1rem 0;
+}
+
+.security {
+    text-align: center;
+}
+
+.security-part {
+    text-align: center;
+}
+.lock {
+    display: inline-block;
+    margin-right: 1rem;
+}
