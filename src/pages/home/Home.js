@@ -3,6 +3,7 @@ import { Hero } from "./sections/hero/Hero";
 import { Service } from "./sections/service/Service";
 import { Designe } from "./sections/designe/Designe";
 import { Progress } from "./sections/progress/Progress";
+import { Product } from "./sections/product/Product";
 const Home = () => {
     return (
         <>
@@ -11,6 +12,7 @@ const Home = () => {
             <Service />
             <Designe />
             <Progress />
+            <Product />
         </>
     );
 };
