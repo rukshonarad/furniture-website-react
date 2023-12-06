@@ -1,4 +1,11 @@
+import { TopNavigation } from "./sections/top-navigation/Top-navigation";
+import { Hero } from "./sections/hero/Hero";
 const Home = () => {
-    return <></>;
+    return (
+        <>
+            <TopNavigation />
+            <Hero />
+        </>
+    );
 };
 export { Home };
