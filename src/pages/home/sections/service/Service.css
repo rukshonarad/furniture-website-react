@@ -1,0 +1,80 @@
+.service {
+    padding: 10rem 15.2rem 8rem;
+}
+
+.service p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.8rem;
+}
+
+.service h2 {
+    margin-bottom: 1.5rem;
+}
+
+.intro-container {
+    margin-bottom: 10rem;
+}
+
+hr {
+    text-decoration: dotted;
+}
+
+.first,
+.second,
+.third {
+    width: 25rem;
+    margin-right: 3.5rem;
+    width: calc((100% - 12rem) / 3);
+}
+
+.relative {
+    position: relative;
+}
+
+#heart,
+#zap,
+#headphone {
+    height: 8rem;
+    width: 8rem;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 2.5rem;
+    vertical-align: middle;
+}
+
+#heart {
+    background-color: #d6ebe4;
+}
+
+#zap {
+    background-color: #fae2da;
+}
+
+#headphone {
+    background-color: #ebf5ff;
+}
+
+.intro-container {
+    margin-bottom: 20rem;
+}
+
+.text {
+    width: calc(100% - 8rem - 3rem);
+    display: inline-block;
+}
+
+.icon {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text h2 {
+    font-size: 2.4rem;
+}
+.inline-block {
+    display: inline-block;
+}
