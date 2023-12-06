@@ -1,0 +1,90 @@
+.designe-section {
+    padding: 10rem 15.2rem 14rem;
+}
+.designe-section__header {
+    position: relative;
+    margin-bottom: 2.7rem;
+}
+.designe-header__text {
+    width: calc(((86.8 * 100) / 140) * 1rem);
+    font-size: 4.2rem;
+    font-weight: 600;
+}
+
+.arrows {
+    position: absolute;
+    right: 0;
+    top: 1rem;
+}
+.picture-wrapper {
+    height: 68rem;
+    width: calc((100% - 5.2rem) / 3);
+}
+
+.picture-wrapper {
+    margin-right: 1.5rem;
+}
+.picture-wrapper img {
+    height: 68rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+#last-img img {
+    height: 68rem;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1.5rem;
+}
+#last-img {
+    height: 68rem;
+    width: calc((100% - 5.2rem) / 3);
+    position: relative;
+}
+
+.price {
+    border-radius: 2rem;
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
+    width: 80%;
+    height: 11.5rem;
+    padding: 2rem;
+    background-color: #ffffff;
+}
+
+.arrow-right-price {
+    position: absolute;
+    top: 7.5rem;
+    right: 2.5rem;
+    width: 1.5rem;
+    height: 1.8rem;
+}
+.arrow-left {
+    height: 2rem;
+    width: 2.5rem;
+    margin-right: 2.2rem;
+}
+
+.arrow-right {
+    width: 1.5rem;
+    height: 2rem;
+}
+
+h4 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    line-height: 4.2rem;
+    color: var(--orange-color);
+    margin-bottom: 1rem;
+}
+
+.product-name {
+    position: absolute;
+    color: #1d263a;
+    font-size: 1.3rem;
+    font-weight: 600;
+    line-height: 2.2rem;
+    letter-spacing: 0.4rem;
+    width: 14rem;
+}
