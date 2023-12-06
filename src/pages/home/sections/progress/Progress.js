@@ -1,4 +1,5 @@
 import "./Progress.css";
+
 import line from "../../../../assets/line.png";
 
 const Progress = () => {
