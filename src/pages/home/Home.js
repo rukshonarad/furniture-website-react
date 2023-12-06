@@ -4,6 +4,7 @@ import { Service } from "./sections/service/Service";
 import { Designe } from "./sections/designe/Designe";
 import { Progress } from "./sections/progress/Progress";
 import { Product } from "./sections/product/Product";
+import { Customers } from "./sections/customers/Customers";
 const Home = () => {
     return (
         <>
@@ -13,6 +14,7 @@ const Home = () => {
             <Designe />
             <Progress />
             <Product />
+            <Customers />
         </>
     );
 };
