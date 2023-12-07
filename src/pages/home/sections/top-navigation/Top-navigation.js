@@ -10,10 +10,10 @@ const links = [
 ];
 const TopNavigation = () => {
     return (
-        <header class="header">
-            <div class="container">
-                <img src={logo} alt="Whiter logo" class="logo" />
-                <nav class="nav inline-block">
+        <header className="header">
+            <div className="container">
+                <img src={logo} alt="Whiter logo" className="logo" />
+                <nav className="nav inline-block">
                     <ul>
                         {links.map((link, idx) => {
                             return (
@@ -25,10 +25,10 @@ const TopNavigation = () => {
                     </ul>
                 </nav>
                 <img src={menu} alt="" id="mobile-nav-icon" />
-                <nav class="mobile-nav">
-                    <span class="close-icon">&times;</span>
+                <nav className="mobile-nav">
+                    <span className="close-icon">&times;</span>
 
-                    <ul class="mobile-nav_link">
+                    <ul className="mobile-nav_link">
                         <li>
                             <a href="">Products</a>
                         </li>

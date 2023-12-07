@@ -2,24 +2,24 @@ import "./Customers.css";
 import lady from "../../../../assets/lady-drinking-coffee.jpeg";
 const Customers = () => {
     return (
-        <section class="customers-review">
-            <div class="customers-review__left">
+        <section className="customers-review">
+            <div className="customers-review__left">
                 <h5>
                     “It was super easy to share my unique concept. I got exactly
                     what I ordered. Great service!”
                 </h5>
-                <p class="author">Jenny Wilson</p>
+                <p className="author">Jenny Wilson</p>
                 <p>St. Celina, Delaware</p>
             </div>
-            <div class="customers-review__rigth">
-                <div class="customers-review__img-wrapper">
+            <div className="customers-review__rigth">
+                <div className="customers-review__img-wrapper">
                     <img
                         src={lady}
                         alt="Lady drinking coffee"
-                        class="customers-review__img"
+                        className="customers-review__img"
                     />
                 </div>
-                <button class="play-btn"></button>
+                <button className="play-btn"></button>
             </div>
         </section>
     );

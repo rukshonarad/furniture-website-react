@@ -21,16 +21,13 @@ hr {
     text-decoration: dotted;
 }
 
-.first,
-.second,
-.third {
+.wrapper {
     width: 25rem;
     margin-right: 3.5rem;
     width: calc((100% - 12rem) / 3);
-}
-
-.relative {
     position: relative;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #heart,
@@ -41,7 +38,7 @@ hr {
     border-radius: 50%;
     display: inline-block;
     margin-right: 2.5rem;
-    vertical-align: middle;
+    vertical-align: top;
 }
 
 #heart {
@@ -74,7 +71,4 @@ hr {
 
 .text h2 {
     font-size: 2.4rem;
-}
-.inline-block {
-    display: inline-block;
 }
