@@ -33,11 +33,13 @@
     line-height: 4rem;
     letter-spacing: -0.05rem;
     vertical-align: top;
+    display: inline-block;
 }
 
 .progress {
     width: calc((100% - 6rem - 10rem - 15rem) * 0.25);
     margin-right: 10rem;
+    display: inline-block;
 }
 
 .section-progress {
@@ -47,6 +49,7 @@
     font-size: 1.7rem;
     font-weight: 400;
     vertical-align: top;
+    display: inline-block;
 }
 .first-progress {
     color: var(--text-color);
