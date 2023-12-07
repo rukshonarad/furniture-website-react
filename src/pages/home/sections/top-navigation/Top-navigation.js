@@ -1,35 +1,34 @@
 import "./Top-navigation.css";
 import logo from "../../../../assets/logo.svg";
 import menu from "../../../../assets/menu.svg";
+const links = [
+    { text: "Product", link: "https://google.com" },
+    { text: "Rooms", link: "https://google.com" },
+    { text: "Inspiration", link: "https://facebook.com" },
+    { text: "Support", link: "https://google.com" },
+    { text: "Sign in", link: "https://google.com" }
+];
 const TopNavigation = () => {
     return (
-        <header class="header">
-            <div class="container">
-                <img src={logo} alt="Whiter logo" class="logo" />
-                <nav class="nav inline-block">
+        <header className="header">
+            <div className="container">
+                <img src={logo} alt="Whiter logo" className="logo" />
+                <nav className="nav inline-block">
                     <ul>
-                        <li>
-                            <a href="">Products</a>
-                        </li>
-                        <li>
-                            <a href="">Rooms</a>
-                        </li>
-                        <li>
-                            <a href="">Inspiration</a>
-                        </li>
-                        <li>
-                            <a href="">Support</a>
-                        </li>
+                        {links.map((link, idx) => {
+                            return (
+                                <li key={idx}>
+                                    <a href={link.link}>{link.text}</a>
+                                </li>
+                            );
+                        })}
                     </ul>
-                    <li class="last-nav">
-                        <a href="">Sign in</a>
-                    </li>
                 </nav>
                 <img src={menu} alt="" id="mobile-nav-icon" />
-                <nav class="mobile-nav">
-                    <span class="close-icon">&times;</span>
+                <nav className="mobile-nav">
+                    <span className="close-icon">&times;</span>
 
-                    <ul class="mobile-nav_link">
+                    <ul className="mobile-nav_link">
                         <li>
                             <a href="">Products</a>
                         </li>
