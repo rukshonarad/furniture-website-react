@@ -1,0 +1,54 @@
+.footer-logo {
+    margin-bottom: 7rem;
+    vertical-align: top;
+}
+
+.footer {
+    padding: 6rem;
+}
+
+.footer__content {
+    background-color: #fae2da;
+    border-radius: 3rem;
+    padding-left: 9.2rem;
+    padding-top: 13rem;
+    padding-bottom: 13rem;
+}
+
+.footer-text {
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 3rem;
+    opacity: 0.69;
+    margin-bottom: 4.6rem;
+}
+
+.footer-card__main {
+    display: inline-block;
+    vertical-align: top;
+    width: calc((100% - 42rem) * 0.3);
+    margin-right: 12.6rem;
+}
+.footer-card__main .footer-card:not(:last-child) {
+    margin-right: 12.6rem;
+}
+.footer-card {
+    display: inline-block;
+    vertical-align: top;
+    /* width: calc((100% - 42rem) * 1.5 / 4); */
+}
+.footer-card:not(:last-child) {
+    margin-right: 12rem;
+}
+.footer-card a {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 400;
+    line-height: 5rem;
+    color: var(--text-color);
+    opacity: 0.69;
+}
+
+.name {
+    margin-bottom: 7.3rem;
+}
