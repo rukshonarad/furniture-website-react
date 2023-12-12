@@ -1,4 +1,5 @@
 import "./Hero.css";
+import "../../../../App.css";
 import shape from "../../../../assets/shape.png";
 import hero from "../../../../assets/hero.png";
 import line from "../../../../assets/line.png";

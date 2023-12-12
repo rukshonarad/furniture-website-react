@@ -1,4 +1,5 @@
 import "./Footer.css";
+import "../../../../App.css";
 import logo from "../../../../assets/logo.svg";
 import { contactLinks, productLinks, aboutUsLinks } from "./data.js";
 const Link = (props) => {

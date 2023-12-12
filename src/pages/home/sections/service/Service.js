@@ -1,4 +1,5 @@
 import "./Service.css";
+import "../../../../App.css";
 import { services } from "./Data";
 
 const Service = (props) => {
