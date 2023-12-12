@@ -3,8 +3,11 @@
     vertical-align: top;
 }
 
-.footer {
+footer {
     padding: 6rem;
+    max-width: 160rem;
+    margin: 0 auto;
+    position: relative;
 }
 
 .footer__content {
