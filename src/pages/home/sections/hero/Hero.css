@@ -81,3 +81,29 @@ h1 {
 .orange-link-text {
     width: 50%;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+    .hero-section {
+        padding: 0 3rem;
+    }
+}
+@media (max-width: 800px) {
+    .hero-section {
+        padding: 0 2rem;
+    }
+}
+@media (max-width: 600px) {
+    .hero-left,
+    .hero-right {
+        display: block;
+        width: 100%;
+    }
+    .hero-section {
+        padding-bottom: 3rem;
+    }
+    .hero_content {
+        padding: 6rem 6rem;
+    }
+}

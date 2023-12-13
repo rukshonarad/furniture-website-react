@@ -11,56 +11,70 @@ const links = [
     { text: "Sign in", link: "https://google.com" }
 ];
 
-const TopNavigation = () => {
-    const [isMobileNavOpen, setIsMobileNavOpen] = useState(false);
-
-    const toggleMobileNav = () => {
-        setIsMobileNavOpen(!isMobileNavOpen);
+const NavigationLinks = (props) => {
+    return (
+        <ul>
+            {props.links.map((link, idx) => (
+                <li key={idx}>
+                    <a href={link.link}>{link.text}</a>
+                </li>
+            ))}
+        </ul>
+    );
+};
+export class TopNavigation extends React.Component {
+    state = {
+        showMenu: false
     };
 
-    return (
-        <header className="header">
-            <div className="container">
-                <img src={logo} alt="Whiter logo" className="logo" />
-                <nav className="nav inline-block">
-                    <ul>
-                        {links.map((link, idx) => (
-                            <li key={idx}>
-                                <a href={link.link}>{link.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-                <img
-                    src={menu}
-                    alt=""
-                    id="mobile-nav-icon"
-                    onClick={toggleMobileNav}
-                    className="mobile-nav-icon"
-                />
-                <nav
-                    className={`mobile-nav ${
-                        isMobileNavOpen ? "show-menu" : ""
-                    }`}
-                >
+    openMenu = () => {
+        this.setState({
+            showMenu: true
+        });
+    };
+
+    closeMenu = () => {
+        this.setState({
+            showMenu: false
+        });
+    };
+
+    render() {
+        const menuClass = this.state.showMenu ? "show-menu" : "";
+
+        return (
+            <header className="header container">
+                <div className="container">
+                    <img className="logo" src={logo} alt="Whiter logo" />
+                    <nav className="nav inline-block">
+                        <NavigationLinks links={links} />
+                    </nav>
+
                     <img
+                        onClick={this.openMenu}
                         src={menu}
                         alt=""
                         id="mobile-nav-icon"
-                        onClick={toggleMobileNav}
-                        className="mobile-nav-icon"
                     />
-                    <ul className="mobile-nav_link">
-                        {links.map((link, idx) => (
-                            <li key={idx}>
-                                <a href={link.link}>{link.text}</a>
-                            </li>
-                        ))}
-                    </ul>
-                </nav>
-            </div>
-        </header>
-    );
-};
 
-export { TopNavigation };
+                    {this.state.showMenu ? (
+                        <nav className={`mobile-nav ${menuClass}`}>
+                            <img
+                                className="mobile-nav_logo"
+                                src={logo}
+                                alt="Whiter logo"
+                            />
+                            <span
+                                className="close-icon"
+                                onClick={this.closeMenu}
+                            >
+                                &times;
+                            </span>
+                            <NavigationLinks links={links} />
+                        </nav>
+                    ) : null}
+                </div>
+            </header>
+        );
+    }
+}
