@@ -55,3 +55,29 @@ footer {
 .name {
     margin-bottom: 7.3rem;
 }
+@media (max-width: 1000px) {
+    .footer {
+        padding: 0 3rem;
+    }
+}
+@media (max-width: 600px) {
+    .footer__content {
+        padding: 13rem 4rem;
+    }
+    .footer-card {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .footer-card__main {
+        display: block;
+        width: 100%;
+        align-items: center;
+    }
+    .footer-card a,
+    .footer-text,
+    .name {
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+}
