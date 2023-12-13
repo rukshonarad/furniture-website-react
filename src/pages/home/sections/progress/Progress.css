@@ -68,3 +68,58 @@
 .orange-link-text {
     width: 12.2rem;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+
+    .progress-section {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+@media (max-width: 800px) {
+    .progress-section {
+        padding: 10rem 5rem 8rem;
+    }
+}
+@media (max-width: 600px) {
+    .progress-section {
+        padding: 3rem;
+    }
+    .progress-section h3 {
+        text-align: center;
+    }
+
+    .progress {
+        width: 100%;
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .section-devider {
+        display: block;
+        align-items: center;
+    }
+    .progress-section {
+        width: 100%;
+        max-width: 160rem;
+        margin: 0 auto;
+        align-items: center;
+        text-align: center;
+    }
+    .section-progress {
+        display: block;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+    .num,
+    .link {
+        display: block;
+        width: 100%;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+}

@@ -72,3 +72,54 @@ hr {
 .text h2 {
     font-size: 2.4rem;
 }
+@media (max-width: 1000px) {
+    .wrapper {
+        width: 25rem;
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+        width: calc((100% - 12rem) / 3);
+    }
+}
+
+@media (max-width: 800px) {
+    .service {
+        padding: 10rem 5rem 8rem;
+    }
+    .wrapper {
+        width: 25rem;
+        margin-right: 1.5rem;
+        width: calc((100% - 12rem) / 3);
+    }
+}
+@media (max-width: 600px) {
+    #heart,
+    #zap,
+    #headphone {
+        display: block;
+        margin-right: 0;
+        position: absolute;
+        margin-bottom: 2rem;
+        top: -10rem;
+        left: 38%;
+    }
+    .service {
+        padding: 10rem 5.2rem 5rem;
+    }
+
+    .service p {
+        text-align: center;
+        margin-bottom: 5rem;
+        margin-left: 10rem;
+    }
+    .text h2 {
+        text-align: center;
+        margin-left: 10rem;
+    }
+    .wrapper {
+        display: block;
+        width: 100%;
+        margin-right: 0;
+        position: relative;
+        margin-bottom: 9rem;
+    }
+}

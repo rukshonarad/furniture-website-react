@@ -56,3 +56,22 @@ h6 {
     display: inline-block;
     margin-right: 1rem;
 }
+@media (max-width: 1000px) {
+    html {
+        font-size: 50%;
+    }
+
+    .subscribe-section-wrapper {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+@media (max-width: 600px) {
+    #email,
+    #button {
+        display: block;
+        width: 100%;
+        border-radius: 1rem;
+        margin-bottom: 1rem;
+    }
+}

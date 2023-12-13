@@ -1,4 +1,5 @@
 import "./Designe.css";
+import "../../../../App.css";
 import arrowLeft from "../../../../assets/arrow-left.svg";
 import arrowRight from "../../../../assets/arrow-right.svg";
 import chairLight from "../../../../assets/chair-light.jpeg";

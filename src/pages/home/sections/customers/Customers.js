@@ -1,4 +1,5 @@
 import "./Customers.css";
+import "../../../../App.css";
 import lady from "../../../../assets/lady-drinking-coffee.jpeg";
 const Customers = () => {
     return (

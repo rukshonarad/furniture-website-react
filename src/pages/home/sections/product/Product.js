@@ -1,4 +1,5 @@
 import "./Product.css";
+import "../../../../App.css";
 import couples from "../../../../assets/wife-husband.jpeg";
 import shape from "../../../../assets/shape.svg";
 import line from "../../../../assets/line.png";

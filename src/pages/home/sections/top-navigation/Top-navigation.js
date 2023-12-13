@@ -1,6 +1,8 @@
+import React, { useState } from "react";
 import "./Top-navigation.css";
 import logo from "../../../../assets/logo.svg";
 import menu from "../../../../assets/menu.svg";
+import "../../../../App.css";
 const links = [
     { text: "Product", link: "https://google.com" },
     { text: "Rooms", link: "https://google.com" },
@@ -8,43 +10,71 @@ const links = [
     { text: "Support", link: "https://google.com" },
     { text: "Sign in", link: "https://google.com" }
 ];
-const TopNavigation = () => {
-    return (
-        <header className="header">
-            <div className="container">
-                <img src={logo} alt="Whiter logo" className="logo" />
-                <nav className="nav inline-block">
-                    <ul>
-                        {links.map((link, idx) => {
-                            return (
-                                <li key={idx}>
-                                    <a href={link.link}>{link.text}</a>
-                                </li>
-                            );
-                        })}
-                    </ul>
-                </nav>
-                <img src={menu} alt="" id="mobile-nav-icon" />
-                <nav className="mobile-nav">
-                    <span className="close-icon">&times;</span>
 
-                    <ul className="mobile-nav_link">
-                        <li>
-                            <a href="">Products</a>
-                        </li>
-                        <li>
-                            <a href="">Rooms</a>
-                        </li>
-                        <li>
-                            <a href="">Inspiration</a>
-                        </li>
-                        <li>
-                            <a href="">Support</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
+const NavigationLinks = (props) => {
+    return (
+        <ul>
+            {props.links.map((link, idx) => (
+                <li key={idx}>
+                    <a href={link.link}>{link.text}</a>
+                </li>
+            ))}
+        </ul>
     );
 };
-export { TopNavigation };
+export class TopNavigation extends React.Component {
+    state = {
+        showMenu: false
+    };
+
+    openMenu = () => {
+        this.setState({
+            showMenu: true
+        });
+    };
+
+    closeMenu = () => {
+        this.setState({
+            showMenu: false
+        });
+    };
+
+    render() {
+        const menuClass = this.state.showMenu ? "show-menu" : "";
+
+        return (
+            <header className="header container">
+                <div className="container">
+                    <img className="logo" src={logo} alt="Whiter logo" />
+                    <nav className="nav inline-block">
+                        <NavigationLinks links={links} />
+                    </nav>
+
+                    <img
+                        onClick={this.openMenu}
+                        src={menu}
+                        alt=""
+                        id="mobile-nav-icon"
+                    />
+
+                    {this.state.showMenu ? (
+                        <nav className={`mobile-nav ${menuClass}`}>
+                            <img
+                                className="mobile-nav_logo"
+                                src={logo}
+                                alt="Whiter logo"
+                            />
+                            <span
+                                className="close-icon"
+                                onClick={this.closeMenu}
+                            >
+                                &times;
+                            </span>
+                            <NavigationLinks links={links} />
+                        </nav>
+                    ) : null}
+                </div>
+            </header>
+        );
+    }
+}
